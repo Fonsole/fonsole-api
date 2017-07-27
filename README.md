@@ -7,5 +7,3 @@ API portion of a platform that offers a series of multiplayer party games where 
 [API Repo](https://github.com/darklordabc/fonsole-api): This is the public API that developers can explore to see how to develop games for fonsole.
 
 [Server Repo](https://github.com/darklordabc/fonsole-server): This is the server component of fonsole. It will eventually be made private.
-
-
