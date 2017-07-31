@@ -4,7 +4,7 @@
   "description": "API portion of a platform that offers a series of multiplayer party games where the smartphone is the controller.",
   "scripts": {
     "dev": "webpack --progress --hide-modules --watch",
-    "build": "webpack --progress --hide-modules"
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
   },
   "repository": {
     "type": "git",
@@ -25,6 +25,7 @@
     "babel-preset-env": "^1.6.0",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
+    "cross-env": "^5.0.1",
     "socket.io-client": "^2.0.3",
     "webpack": "^3.4.1"
   }
