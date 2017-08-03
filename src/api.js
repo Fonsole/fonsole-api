@@ -72,23 +72,23 @@ export default class Fonsole {
    * Subscribe to game events.
    *
    * @param {string} event Subscribed event name
-   * @param {function} callback Callback function. Called with (senderId, ...other arguments)
+   * @param {function} handler Callback function. Called with (senderId, ...other arguments)
    * @returns {Number} Listener index in event array
    * @memberof NetworkingAPI
    */
-  on(event, callback) {
-    this.NetworkingAPI.on(event, callback);
+  on(event, handler) {
+    this.NetworkingAPI.on(event, handler);
   }
 
   /**
    * Subscribe to next dispatched event.
    *
    * @param {string} event Subscribed event name
-   * @param {function} callback Callback function. Called with (senderId, ...other arguments)
+   * @param {function} handler Callback function. Called with (senderId, ...other arguments)
    * @returns {Number} Listener index in event array
    * @memberof NetworkingAPI
    */
-  once(event, callback) {
-    this.NetworkingAPI.once(event, callback);
+  once(event, handler) {
+    this.NetworkingAPI.once(event, handler);
   }
 }
