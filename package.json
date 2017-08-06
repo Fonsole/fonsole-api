@@ -4,7 +4,9 @@
   "description": "API portion of a platform that offers a series of multiplayer party games where the smartphone is the controller.",
   "scripts": {
     "dev": "webpack --progress --hide-modules --watch",
-    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules",
+
+    "postmerge": "node hooks/postmerge.js"
   },
   "main": "./src/index",
   "repository": {
@@ -33,6 +35,7 @@
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-unicorn": "^2.1.2",
+    "husky": "^0.14.3",
     "socket.io-client": "^2.0.3",
     "webpack": "^3.4.1"
   }
